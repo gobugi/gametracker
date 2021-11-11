@@ -1,0 +1,21 @@
+h1 {
+    color: #555555;
+}
+
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    /* overflow: scroll; */
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto;
+    width: 95%;
+}
+
+
+
+.homePageGameButton{
+    width: fit-content;
+    height: 20rem;
+}

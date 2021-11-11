@@ -1,0 +1,18 @@
+extends specific-game
+append head
+    script(src="/javascripts/specific-game-review.js" type="module")
+append addReviewButton
+    a.nav-link-active(href=`/games/${specificGame.id}/reviews/new`) Add a Review
+block moreContent
+    h3 Reviews
+    div.mainContainer
+        each review in specificGame.Reviews
+            div.contentMain
+                h4 #{review.title} by #{review.User.username}
+                p Rating: #{review.rating}
+                p= review.content
+                if authenticated
+                    if user.id == review.userId
+                        div.buttonContainer
+                            button(class="reviewDelete" id=review.id).nav-link-active Delete
+                            a(href=`/reviews/${review.id}/edit`).nav-link-active Edit

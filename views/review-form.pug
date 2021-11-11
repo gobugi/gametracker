@@ -1,0 +1,16 @@
+extends layout
+block content
+    h1 Create Review
+    form(action=`/games/${gameId}/reviews` method='post')
+        input(type='hidden' name='_csrf' value=csrfToken)
+        div.textContainer
+            label(for="title") Title:
+            input(type="text" name="title" size="55" required)
+        div.textContainer
+            label(for="rating") Rating:
+            input(type="number" name="rating" min="1" max="5" required)
+        div.buttonContainer
+            textarea(name="content" placeholder="Enter a review here" rows="12" cols="50" required)
+        div.buttonContainer
+            button(type="submit").nav-link-active Create review
+            a(href=`/games/${gameId}/reviews`).nav-link-active Cancel

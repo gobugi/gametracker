@@ -1,0 +1,66 @@
+/* body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, a, ol, li, ul, div, span,
+body, header, nav {
+  font-size: 1rem;
+  color: inherit;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 2rem;
+} */
+
+body{
+  margin:0;
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+
+
+
+
+/*
+ul{
+  width: 80%;
+  margin:30px auto;
+  padding: 1.5em;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+} */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.customButton {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+.tableItem {
+  padding: 2.2rem;
+  border-bottom: 1px solid #ddd;
+}
+tr:hover {
+  background-color: yellow;
+}
+
+.imgLogo{
+  width: 64px;
+  height: 64px;
+}

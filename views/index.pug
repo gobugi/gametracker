@@ -1,0 +1,19 @@
+extends layout
+
+append head
+  //- add page specific styles by appending to the head
+  link(rel="stylesheet" href="/stylesheets/index.css")
+  //- add page specific js
+  script(src="/javascripts/index.js" type="module" defer)
+
+block content
+  div.contentReview
+    h3= title
+    p Welcome to Retro Game Tracker! The website aimed to help you keep track of all you game collections!
+
+  div
+    h4 Discover your next favorite game
+  div(class='container')
+    each game in games
+      a.homePageGameButton(href=`/games/${game.id}`)
+          img.homePageGameImg(src= game.image, alt="")
