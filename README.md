@@ -1,6 +1,6 @@
-# RetroGameTracker
+# GameTracker
 
-RetroGameTracker is a website that allows you to discover your next favorite game. It allows you to organize your games, while also allowing you to rate the games yourself. You can find our website at https://retro-game-tracker.herokuapp.com/
+GameTracker is a website that allows you to discover your next favorite game. It allows you to organize your games, while also allowing you to rate the games yourself. You can find our website at https://game-tracker.herokuapp.com/
 
 ## Contributors
 * [Eric Quan](https://www.google.com)
@@ -11,10 +11,10 @@ RetroGameTracker is a website that allows you to discover your next favorite gam
 
 ## Development
 * Our agile process can be found on our wiki/project tab located at
-    1. https://github.com/equan1090/retro-tracker/projects
-    2. https://github.com/equan1090/retro-tracker/wiki
+    1. https://github.com/gobugi/gametracker/projects
+    2. https://github.com/gobugi/gametracker/wiki
 * To start our development:
-    1. Clone the repository at https://github.com/equan1090/retro-tracker.git
+    1. Clone the repository at https://github.com/gobugi/gametracker.git
     2. Run go to the root directory and type "npm install" into the terminal to install dependencies
     3. Run the "npm start" to launch the server
     4. Navigate to config/index.js to locate the port number specified
@@ -95,5 +95,3 @@ RetroGameTracker is a website that allows you to discover your next favorite gam
 
 ## Database Structure
 ![image](https://user-images.githubusercontent.com/76127850/131228440-cc5b362f-327c-4c05-acc4-5df784769fd3.png)
-
-

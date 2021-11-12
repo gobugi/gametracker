@@ -33,7 +33,7 @@ const store = new SequelizeStore({ db: sequelize });
 
 app.use(
   session({
-    name: "RetroGameTracker.sid",
+    name: "GameTracker.sid",
     secret: sessionSecret,
     store,
     saveUninitialized: false,

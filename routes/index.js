@@ -14,7 +14,7 @@ router.get('/', async(req, res, next) => {
   });
 
   res.render('index', {
-    title: "Retro Game Tracker",
+    title: "Game Tracker",
     games
   });
 });

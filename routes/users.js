@@ -43,7 +43,7 @@ router.get('/:id(\\d+)', asyncHandler( async(req, res, next) =>  {
 router.get('/login', csrfProtection, asyncHandler(async(req, res, next) => {
   // const user = await db.User.;
   res.render('login', {
-    title: 'Log in to RetroGameTracker',
+    title: 'Log in to GameTracker',
     csrfToken: req.csrfToken(),
     demoUser: false
   })
@@ -56,7 +56,7 @@ router.get('/login/demo', csrfProtection, asyncHandler(async (req, res, next) =>
 
   const demoUserPassword = 'Abc123!@-';
   res.render('login', {
-    title: 'Log in to RetroGameTracker',
+    title: 'Log in to GameTracker',
     csrfToken: req.csrfToken(),
     demoUser,
     demoUserPassword
@@ -95,13 +95,13 @@ router.post('/login', csrfProtection, asyncHandler(async(req, res, next) => {
     errors.push("Log in failed")
     res.render('login', {
       errors,
-      title: "Log in to RetroGameTracker"
+      title: "Log in to GameTracker"
     })
 
   } else{
     errors = validationErrors.array().map(error => error.msg);
     res.render('login', {
-      title: 'Log in to RetroGameTracker',
+      title: 'Log in to GameTracker',
       user,
       errors,
       csrfToken: req.csrfToken()
@@ -124,7 +124,7 @@ router.get('/logout', (req, res, next) => {
 router.get('/register',  csrfProtection, asyncHandler( async (req, res, next) => {
   const user = await db.User.build();
   res.render('user-register', {
-    title: 'Register with RetroGameTracker',
+    title: 'Register with GameTracker',
     user,
     csrfToken: req.csrfToken()
   })
@@ -173,7 +173,7 @@ router.post('/register', csrfProtection, userValidators, asyncHandler( async (re
     const errors = validationErrors.array().map(error => error.msg);
     console.log(errors)
     res.render('user-register', {
-      title: 'Register with RetroGameTracker',
+      title: 'Register with GameTracker',
       user,
       errors,
       csrfToken: req.csrfToken()
